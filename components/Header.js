@@ -28,6 +28,7 @@ function Header() {
         >
           <Image
             src="https://links.papareact.com/ocw"
+            alt="logo"
             layout="fill"
             objectFit="contain"
           />
@@ -38,6 +39,7 @@ function Header() {
         >
           <Image
             src="https://links.papareact.com/jjm"
+            alt="logo"
             layout="fill"
             objectFit="contain"
           />
