@@ -13,6 +13,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import { modalState } from "../atoms/modalAtom";
+import Image from 'next/image'
 
 function Header() {
   const { data: session } = useSession();
@@ -71,7 +72,7 @@ function Header() {
               <PlusCircleIcon onClick={() => setOpen(true)} className="Btns" />
               <UserGroupIcon className="Btns" />
               <HeartIcon className="Btns" />
-              <img
+              <Image
                 onClick={signOut}
                 src={session?.user?.image}
                 alt="profile pic"
