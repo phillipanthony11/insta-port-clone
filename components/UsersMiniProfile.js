@@ -1,6 +1,6 @@
 import { signOut, useSession } from "next-auth/react";
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 function UsersMiniProfile() {
   const { data: session } = useSession();
@@ -14,7 +14,9 @@ function UsersMiniProfile() {
       />
       <div className="flex-1 mx-4">
         <h2 className="font-bold">{session?.user?.username}</h2>
-        <h3 className="text-sm text-gray-400">Welcome to Pedro's palace</h3>
+        <h3 className="text-sm text-gray-400">
+          Welcome to Pedro&apos;s palace
+        </h3>
       </div>
       <button onClick={signOut} className="text-blue-400 text-sm font-semibold">
         Escape
