@@ -22,6 +22,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase";
 import Moment from "react-moment";
+import Image from "next/image";
 
 function Post({ id, username, userImg, img, caption }) {
   const { data: session } = useSession();
@@ -82,11 +83,9 @@ function Post({ id, username, userImg, img, caption }) {
     });
   };
   return (
-    
     <div className="bg-white my-7 border rounded-sm">
-      
       <div className="flex items-center p-5">
-        <img
+        <Image
           src={userImg}
           alt=""
           className="rounded-full h-12 w-12 object-contain border p-1 mr-3"
@@ -94,9 +93,8 @@ function Post({ id, username, userImg, img, caption }) {
         <p className="flex-1 font-bold">{username}</p>
         <DotsHorizontalIcon className="h-5" />
       </div>
-      
-      <img src={img} className="object-cover w-full" alt="" />
-      
+
+      <Image src={img} className="object-cover w-full" alt="" />
 
       {session && (
         <div className="flex justify-between px-5 pt-5">
@@ -128,7 +126,7 @@ function Post({ id, username, userImg, img, caption }) {
         <div className="ml-10 h-20 overflow-y-scroll scrollbar-thumb-black scrollbar-thin">
           {comments.map((comment) => (
             <div key={comment.id} className="flex items-center space-x-2 mb-3">
-              <img
+              <Image
                 className="h-7 rounded-full"
                 src={comment.data().userImage}
                 alt=""
