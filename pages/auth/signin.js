@@ -12,6 +12,8 @@ function signIn({ providers }) {
           className="w-60"
           src="https://links.papareact.com/ocw"
           alt="test"
+          width={500}
+          height={500}
         />
         <p className="font-xs italic">
           This is not a Real app, it is built for educational purposes only

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import {
   SearchIcon,
   PlusCircleIcon,
@@ -26,23 +26,27 @@ function Header() {
           onClick={() => router.push("/")}
           className="relative hidden lg:inline-grid w-24 cursor-pointer"
         >
-          <Image
-            src="https://links.papareact.com/ocw"
-            alt="logo"
-            layout="fill"
-            objectFit="contain"
-          />
+          <picture>
+            <img
+              src="https://links.papareact.com/ocw"
+              alt="logo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </picture>
         </div>
         <div
           onClick={() => router.push("/")}
           className="relative lg:hidden w-10 flex-shrink-0 cursor-pointer"
         >
-          <Image
-            src="https://links.papareact.com/jjm"
-            alt="logo"
-            layout="fill"
-            objectFit="contain"
-          />
+          <picture>
+            <img
+              src="https://links.papareact.com/jjm"
+              alt="logo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </picture>
         </div>
         <div className="max-w-xs">
           <div className="relative mt-2 p-4 rounded-md">
@@ -71,12 +75,14 @@ function Header() {
               <PlusCircleIcon onClick={() => setOpen(true)} className="Btns" />
               <UserGroupIcon className="Btns" />
               <HeartIcon className="Btns" />
-              <Image
-                onClick={signOut}
-                src={session?.user?.image}
-                alt="profile pic"
-                className="h-10 w-10 rounded-full cursor-pointer"
-              />
+              <picture>
+                <img
+                  onClick={signOut}
+                  src={session?.user?.image}
+                  alt="profile pic"
+                  className="h-10 w-10 rounded-full cursor-pointer"
+                />
+              </picture>
             </>
           ) : (
             <button onClick={signIn}>Sign In</button>

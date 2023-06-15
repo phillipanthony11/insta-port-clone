@@ -2,7 +2,7 @@ import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import Post from "./Post";
-import Image from 'next/image'
+
 
 function Posts() {
   const [posts, setPosts] = useState([]);

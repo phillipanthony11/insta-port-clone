@@ -1,53 +1,52 @@
 import React from "react";
-import Image from 'next/image'
 
 function PeopleToMeet() {
   var suggestions = [
     {
       id: 1,
-      avatar: "./images/Bear.jpg",
+      avatar: "/images/Bear.jpg",
       username: "Bear",
       company: "Bear Industrial Farms",
     },
     {
       id: 2,
-      avatar: "./images/Suzanne.jpg",
+      avatar: "/images/Suzanne.jpg",
       username: "Suzanne!!!",
       company: "Safeway",
     },
     {
       id: 3,
-      avatar: "./images/Mckenzie.jpg",
+      avatar: "/images/Mckenzie.jpg",
       username: "Mckenzie",
       company: "SeaTac",
     },
     {
       id: 4,
-      avatar: "./images/Aristotle.jpg",
+      avatar: "/images/Aristotle.jpg",
       username: "Aristotle",
       company: "MIT",
     },
     {
       id: 5,
-      avatar: "./images/Yellow.jpg",
+      avatar: "/images/Yellow.jpg",
       username: "Yellow",
       company: "Port Townsend Public Library",
     },
     {
       id: 6,
-      avatar: "./images/Kenzie.jpg",
+      avatar: "/images/Kenzie.jpg",
       username: "Kenzie",
       company: "El Corazon",
     },
     {
       id: 7,
-      avatar: "./images/Stella.jpg",
+      avatar: "/images/Stella.jpg",
       username: "Stella",
       company: "National Parks Service",
     },
     {
       id: 8,
-      avatar: "./images/Koa.jpg",
+      avatar: "/images/Koa.jpg",
       username: "Koa",
       company: "Childen's Hospital Seattle",
     },
@@ -64,11 +63,13 @@ function PeopleToMeet() {
           key={profile.id}
           className="flex items-center justify-between mt-4"
         >
-          <Image
-            className="w-10 h-10 rounded-full border p-[2px]"
-            src={profile.avatar}
-            alt=""
-          />
+          <picture>
+            <img
+              className="w-10 h-10 rounded-full border p-[2px]"
+              src={profile.avatar}
+              alt=""
+            />
+          </picture>
           <div className="flex-1 ml-5">
             <h2 className="font-semibold text-sm">{profile.username}</h2>
             <h3 className="text-xs text-gray-400">

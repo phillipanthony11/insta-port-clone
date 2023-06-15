@@ -1,6 +1,6 @@
 import React from "react";
 import UserStory from "./UserStory";
-import Image from "next/image";
+
 import aristotle from "../public/images/Aristotle.jpg";
 import { useSession } from "next-auth/react";
 
@@ -11,7 +11,7 @@ function Users() {
   var suggestions = [
     {
       id: 1,
-      img: "./images/Aristotle.jpg",
+      img: "/images/Aristotle.jpg",
       alt: "dog deep in thought",
       username: "Aristotle",
       key: 1,
@@ -19,49 +19,49 @@ function Users() {
 
     {
       id: 2,
-      img: "./images/Kenzie.jpg",
+      img: "/images/Kenzie.jpg",
       alt: "dog hanging out with siblings",
       username: "Kenzie the pup",
       key: 2,
     },
     {
       id: 3,
-      img: "./images/Stella.jpg",
+      img: "/images/Stella.jpg",
       alt: "dog somewhere",
       username: "Stella",
       key: 3,
     },
     {
       id: 4,
-      img: "./images/Suzanne.jpg",
+      img: "/images/Suzanne.jpg",
       alt: "dog somewhere",
       username: "Suzanne!!!",
       key: 4,
     },
     {
       id: 5,
-      img: "./images/Mckenzie.jpg",
+      img: "/images/Mckenzie.jpg",
       alt: "dog somewhere",
       username: "Mckenzie",
       key: 5,
     },
     {
       id: 6,
-      img: "./images/Yellow.jpg",
+      img: "/images/Yellow.jpg",
       alt: "dog somewhere",
       username: "Yellow Dog",
       key: 6,
     },
     {
       id: 7,
-      img: "./images/Bear.jpg",
+      img: "/images/Bear.jpg",
       alt: "dog somewhere",
       username: "Bear",
       key: 7,
     },
     {
       id: 8,
-      img: "./images/Koa.jpg",
+      img: "/images/Koa.jpg",
       alt: "dog somewhere",
       username: "Koa",
       key: 8,
