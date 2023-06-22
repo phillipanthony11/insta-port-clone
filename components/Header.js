@@ -31,7 +31,7 @@ function Header() {
               src="https://links.papareact.com/ocw"
               alt="logo"
               layout="fill"
-              objectFit="contain"
+              objectfit="contain"
             />
           </picture>
         </div>
@@ -44,7 +44,7 @@ function Header() {
               src="https://links.papareact.com/jjm"
               alt="logo"
               layout="fill"
-              objectFit="contain"
+              objectfit="contain"
             />
           </picture>
         </div>

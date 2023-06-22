@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import Post from "./Post";
 
-
 function Posts() {
   const [posts, setPosts] = useState([]);
 
@@ -26,7 +25,7 @@ function Posts() {
           id={posts.id}
           username={posts.data().username}
           userImg={posts.data().profileImg}
-          image={posts.data().image}
+          img={posts.data().image}
           caption={posts.data().caption}
         />
       ))}
